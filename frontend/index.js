@@ -27,7 +27,7 @@ function SummaryApp() {
                 // Every field has a 'None' aggregator which outputs a
                 // blank. It's not very interesting to look at, so we
                 // filter it out.
-                .filter(aggregator => aggregator.key !== 'none')
+                .filter((aggregator) => aggregator.key !== 'none')
                 .map((aggregator, key) => (
                     <Aggregation
                         key={key}
